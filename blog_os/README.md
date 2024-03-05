@@ -1,20 +1,23 @@
 ## todo
 
 -   [ ] chapter04
+-   [ ] diff with https://github.com/phil-opp/blog_os/tree/post-04
 -   [ ] chapter05
 -   [ ] chapter06
 -   [ ] https://os.phil-opp.com/disable-simd/
 -   [ ] https://os.phil-opp.com/red-zone/
 -   [ ] chapter07
 -   [ ] chapter08
+-   [ ] diff with https://github.com/phil-opp/blog_os/tree/post-08
 -   [ ] chapter09
 -   [ ] chapter10
 -   [ ] chapter11
 -   [ ] chapter12
--   [ ] fix `can't find crate for test` in `main.rs`
+-   [ ] diff with https://github.com/phil-opp/blog_os/tree/post-12
 -   [ ] rust 2018 → 2021
 -   [ ] move `blog_os` to root directory
 -   [ ] write own bootloader for multiboot/grub (https://os.phil-opp.com/edition-1/)
+-   [ ] `qemu` in terminal like lsimanic
 -   [ ] finish kfs1
 -   [ ] clean
 -   [ ] find project name and rebrand
