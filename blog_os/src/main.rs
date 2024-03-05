@@ -1,23 +1,26 @@
 #![no_std]
 #![no_main]
 
-use core::panic::PanicInfo;
+mod vga_buffer;
 
-static HELLO: &[u8] = b"Hello World!";
+use core::panic::PanicInfo;
 
 #[no_mangle]
 pub extern "C" fn _start() -> ! {
-    let vga_buffer = 0xb8000 as *mut u8;
-    for (i, &byte) in HELLO.iter().enumerate() {
-        unsafe {
-            *vga_buffer.offset(i as isize * 2) = byte;
-            *vga_buffer.offset(i as isize * 2 + 1) = 0xb;
-        }
-    }
+    vga_buffer::WRITER.lock().write_byte(b'H');
+    vga_buffer::WRITER.lock().write_string("ello ");
+    print!("Wörld!");
+    vga_buffer::WRITER.lock().write_byte(b' ');
+    println!("The numbers are {} and {}", 42, 1.0 / 3.0);
+    vga_buffer::WRITER
+        .lock()
+        .write_string("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+
     loop {}
 }
 
 #[panic_handler]
-fn panic(_info: &PanicInfo) -> ! {
+fn panic(info: &PanicInfo) -> ! {
+    println!("{}", info);
     loop {}
 }
