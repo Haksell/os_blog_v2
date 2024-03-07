@@ -12,7 +12,6 @@
 -   [ ] https://os.phil-opp.com/disable-simd/
 -   [ ] https://os.phil-opp.com/red-zone/
 -   [ ] rust 2018 → 2021
--   [ ] move `blog_os` to root directory
 -   [ ] write own bootloader for multiboot/grub (https://os.phil-opp.com/edition-1/)
 -   [ ] stop using x86_64 module? (https://os.phil-opp.com/edition-1/extra/naked-exceptions/)
 -   [ ] `qemu` in terminal like lsimanic
