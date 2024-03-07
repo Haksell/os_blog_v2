@@ -30,4 +30,5 @@
 -   https://github.com/rust-osdev
 -   https://singlelogin.re/book/25182527/e03396/modern-operating-systems.html
 -   https://www.gnu.org/software/grub/manual/multiboot2/multiboot.pdf
+-   `#os-dev`: https://discord.com/channels/273534239310479360/375706574133526529
 -   improvement ideas: https://chat.openai.com/share/8aff468f-4ab9-4f35-80ca-a0425d1e8d83

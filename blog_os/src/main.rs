@@ -9,20 +9,35 @@ mod vga_buffer;
 
 use core::panic::PanicInfo;
 
+pub trait Testable {
+    fn run(&self) -> ();
+}
+
+impl<T: Fn()> Testable for T {
+    fn run(&self) {
+        serial_print!("{}... ", core::any::type_name::<T>());
+        self();
+        serial_println!("[ok]");
+    }
+}
+
 #[cfg(test)]
-pub fn test_runner(tests: &[&dyn Fn()]) {
+pub fn test_runner(tests: &[&dyn Testable]) {
     serial_println!("Running {} tests", tests.len());
     for test in tests {
-        test();
+        test.run();
     }
     exit_qemu(QemuExitCode::Success);
 }
 
 #[test_case]
 fn trivial_assertion() {
-    serial_print!("trivial assertion... ");
     assert_eq!(1, 1);
-    serial_println!("[ok]");
+}
+
+#[test_case]
+fn zoom_assertion() {
+    assert_eq!(2 + 2, 4);
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
