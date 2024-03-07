@@ -19,7 +19,8 @@
 -   [ ] finish kfs1
 -   [ ] clean
 -   [ ] find project name and rebrand
--   [ ] push
+-   [ ] push kfs1
+-   [ ] nice help menu with Code page 437 border characters
 
 ## resources
 
