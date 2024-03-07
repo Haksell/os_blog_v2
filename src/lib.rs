@@ -5,14 +5,15 @@
 #![reexport_test_harness_main = "test_main"]
 #![feature(abi_x86_interrupt)]
 
+pub mod gdt;
 pub mod interrupts;
 pub mod serial;
 pub mod vga_buffer;
 
 use core::panic::PanicInfo;
 
-// TODO: use colorize module or create our own
-pub static TEST_OK: &'static str = "\x1b[1m\x1b[92m[ok]\x1b[0m";
+// TODO: "\x1b[1m\x1b[92m[ok]\x1b[0m"
+pub static TEST_OK: &'static str = "[ok]";
 
 pub trait Testable {
     fn run(&self) -> ();
@@ -72,5 +73,6 @@ pub fn exit_qemu(exit_code: QemuExitCode) {
 }
 
 pub fn init() {
+    gdt::init();
     interrupts::init_idt();
 }
