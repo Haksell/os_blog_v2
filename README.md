@@ -1,4 +1,6 @@
-## todo
+# KFS
+
+### todo
 
 -   [ ] chapter06
 -   [ ] chapter07
@@ -21,7 +23,7 @@
 -   [ ] push kfs1
 -   [ ] nice help menu with Code page 437 border characters
 
-## resources
+### resources
 
 -   https://os.phil-opp.com/
 -   https://osdev.org/Main_Page
