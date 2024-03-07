@@ -11,6 +11,7 @@
 -   [ ] chapter11
 -   [ ] chapter12
 -   [ ] diff with https://github.com/phil-opp/blog_os/tree/post-12
+-   [ ] create `### kfs 1 subject` section with actual todo list
 -   [ ] https://os.phil-opp.com/disable-simd/
 -   [ ] https://os.phil-opp.com/red-zone/
 -   [ ] rust 2018 → 2021
