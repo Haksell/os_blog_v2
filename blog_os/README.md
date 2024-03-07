@@ -1,7 +1,5 @@
 ## todo
 
--   [ ] chapter04
--   [ ] diff with https://github.com/phil-opp/blog_os/tree/post-04
 -   [ ] chapter05
 -   [ ] chapter06
 -   [ ] https://os.phil-opp.com/disable-simd/
