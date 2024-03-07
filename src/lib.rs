@@ -65,7 +65,6 @@ pub enum QemuExitCode {
 
 pub fn exit_qemu(exit_code: QemuExitCode) {
     use x86_64::instructions::port::Port;
-
     unsafe {
         let mut port = Port::new(0xf4);
         port.write(exit_code as u32);
@@ -75,4 +74,6 @@ pub fn exit_qemu(exit_code: QemuExitCode) {
 pub fn init() {
     gdt::init();
     interrupts::init_idt();
+    unsafe { interrupts::PICS.lock().initialize() };
+    x86_64::instructions::interrupts::enable();
 }

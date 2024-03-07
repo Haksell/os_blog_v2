@@ -16,7 +16,15 @@ pub extern "C" fn _start() -> ! {
     test_main();
 
     println!("ooga booga cya");
-    loop {}
+    use blog_os::print;
+    let mut c: u8 = 32;
+    loop {
+        print!("{}", c as char);
+        c = if c == 126 { 32 } else { c + 1 };
+        for _ in 0..10000 {
+            volatile::Volatile::new(0).read();
+        }
+    }
 }
 
 #[cfg(not(test))]

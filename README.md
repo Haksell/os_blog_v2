@@ -5,7 +5,6 @@
 -   [ ] chapter07
 -   [ ] chapter08
 -   [ ] chapter09
--   [ ] diff with https://github.com/phil-opp/blog_os/tree/post-09
 -   [ ] chapter10
 -   [ ] chapter11
 -   [ ] chapter12
@@ -27,6 +26,7 @@
 -   [ ] find project name and rebrand
 -   [ ] push kfs1
 -   [ ] nice help menu with Code page 437 border characters
+-   [ ] VGA history and scroll
 
 ### resources
 
@@ -38,3 +38,17 @@
 -   https://www.gnu.org/software/grub/manual/multiboot2/multiboot.pdf
 -   `#os-dev`: https://discord.com/channels/273534239310479360/375706574133526529
 -   improvement ideas: https://chat.openai.com/share/8aff468f-4ab9-4f35-80ca-a0425d1e8d83
+
+### garbage
+
+```rust
+use blog_os::print;
+let mut c: u8 = 32;
+loop {
+    print!("{}", c as char);
+    c = if c == 126 { 32 } else { c + 1 };
+    for _ in 0..10000 {
+        volatile::Volatile::new(0).read();
+    }
+}
+```
