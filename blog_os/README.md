@@ -1,9 +1,6 @@
 ## todo
 
--   [ ] chapter05
 -   [ ] chapter06
--   [ ] https://os.phil-opp.com/disable-simd/
--   [ ] https://os.phil-opp.com/red-zone/
 -   [ ] chapter07
 -   [ ] chapter08
 -   [ ] diff with https://github.com/phil-opp/blog_os/tree/post-08
@@ -12,13 +9,17 @@
 -   [ ] chapter11
 -   [ ] chapter12
 -   [ ] diff with https://github.com/phil-opp/blog_os/tree/post-12
+-   [ ] https://os.phil-opp.com/disable-simd/
+-   [ ] https://os.phil-opp.com/red-zone/
 -   [ ] rust 2018 → 2021
 -   [ ] move `blog_os` to root directory
 -   [ ] write own bootloader for multiboot/grub (https://os.phil-opp.com/edition-1/)
+-   [ ] stop using x86_64 module? (https://os.phil-opp.com/edition-1/extra/naked-exceptions/)
 -   [ ] `qemu` in terminal like lsimanic
 -   [ ] finish kfs1
 -   [ ] clean
 -   [ ] find project name and rebrand
+-   [ ] push
 
 ## resources
 

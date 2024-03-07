@@ -4,7 +4,7 @@
 #![test_runner(test_runner)]
 #![reexport_test_harness_main = "test_main"]
 
-use blog_os::{exit_qemu, serial_print, serial_println, QemuExitCode};
+use blog_os::{exit_qemu, serial_print, serial_println, QemuExitCode, TEST_OK};
 use core::panic::PanicInfo;
 
 #[no_mangle]
@@ -18,7 +18,7 @@ pub extern "C" fn _start() -> ! {
 
 #[panic_handler]
 fn panic(_info: &PanicInfo) -> ! {
-    serial_println!("[ok]");
+    serial_println!("{}", TEST_OK);
     exit_qemu(QemuExitCode::Success);
     loop {}
 }

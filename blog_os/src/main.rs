@@ -9,11 +9,14 @@ use core::panic::PanicInfo;
 
 #[no_mangle]
 pub extern "C" fn _start() -> ! {
-    println!("Wesh la famille !");
+    println!("Wesh la famille ! {}", 6 * 7);
+    blog_os::init();
+    x86_64::instructions::interrupts::int3();
 
     #[cfg(test)]
     test_main();
 
+    println!("ooga booga cya");
     loop {}
 }
 
