@@ -16,9 +16,11 @@
 -   [ ] read https://os.phil-opp.com/red-zone/
 -   [ ] fix warnings
 -   [ ] 64-bit -> 32-bit (https://wiki.osdev.org/Bare_Bones)
+-   [ ] keep 64-bit as turbo-bonus?
 -   [ ] rust 2018 → 2021
 -   [ ] write own bootloader for multiboot/grub (https://os.phil-opp.com/edition-1/)
 -   [ ] stop using x86_64 module? (https://os.phil-opp.com/edition-1/extra/naked-exceptions/)
+-   [ ] write own `pic8259` or `apic` module?
 -   [ ] `qemu` in terminal like lsimanic
 -   [ ] finish kfs1
 -   [ ] clean
