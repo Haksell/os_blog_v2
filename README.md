@@ -12,9 +12,10 @@
 -   [ ] diff with https://github.com/phil-opp/blog_os/tree/post-12
 -   [ ] create `### kfs 1 subject` section with actual todo list
 -   [ ] colorful tests (with color module based on `colored`)
--   [ ] https://os.phil-opp.com/disable-simd/
--   [ ] https://os.phil-opp.com/red-zone/
+-   [ ] read https://os.phil-opp.com/disable-simd/
+-   [ ] read https://os.phil-opp.com/red-zone/
 -   [ ] fix warnings
+-   [ ] 64-bit -> 32-bit (https://wiki.osdev.org/Bare_Bones)
 -   [ ] rust 2018 → 2021
 -   [ ] write own bootloader for multiboot/grub (https://os.phil-opp.com/edition-1/)
 -   [ ] stop using x86_64 module? (https://os.phil-opp.com/edition-1/extra/naked-exceptions/)
