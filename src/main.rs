@@ -15,7 +15,7 @@ pub extern "C" fn _start() -> ! {
     #[cfg(test)]
     test_main();
 
-    println!("ooga booga cya");
+    println!("Ooga booga");
     hlt_loop();
 }
 

@@ -20,6 +20,7 @@
 -   [ ] write own bootloader for multiboot/grub (https://os.phil-opp.com/edition-1/)
 -   [ ] stop using x86_64 module? (https://os.phil-opp.com/edition-1/extra/naked-exceptions/)
 -   [ ] write own `pic8259` or `apic` module?
+-   [ ] write own `pc-keyboard` module?
 -   [ ] `qemu` in terminal like lsimanic
 -   [ ] finish kfs1
 -   [ ] clean
