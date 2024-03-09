@@ -9,13 +9,12 @@ use core::panic::PanicInfo;
 
 #[no_mangle]
 pub extern "C" fn _start() -> ! {
-    println!("Wesh la famille ! {}", 6 * 7);
+    println!("KFS {}", 6 * 7);
     blog_os::init();
 
     #[cfg(test)]
     test_main();
 
-    println!("Ooga booga");
     hlt_loop();
 }
 
