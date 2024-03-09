@@ -2,7 +2,7 @@
 #![no_std]
 #![no_main]
 
-use blog_os::{exit_qemu, gdt, serial_print, serial_println, QemuExitCode, TEST_OK};
+use blog_os::{exit_qemu, gdt, hlt_loop, serial_print, serial_println, QemuExitCode, TEST_OK};
 use core::panic::PanicInfo;
 use lazy_static::lazy_static;
 use x86_64::structures::idt::{InterruptDescriptorTable, InterruptStackFrame};
@@ -25,7 +25,7 @@ extern "x86-interrupt" fn test_double_fault_handler(
 ) -> ! {
     serial_println!("{}", TEST_OK);
     exit_qemu(QemuExitCode::Success);
-    loop {}
+    hlt_loop();
 }
 
 #[no_mangle]
