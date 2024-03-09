@@ -26,7 +26,7 @@
 -   [ ] push kfs1
 -   [ ] nice help menu with `Code page 437` border characters
 -   [ ] VGA history and scroll
--   [ ] use KVM ton top of QEMU?
+-   [ ] use KVM on top of QEMU?
 
 ### subject
 
