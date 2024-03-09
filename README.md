@@ -34,24 +34,24 @@
 -   [ ] An ASM bootable base
 -   [ ] A basic kernel library, with basic functions and types
 -   [x] Some basic code to print some stuff on the screen
--   [🚧] A basic "Hello world" kernel
+-   [ ] A basic "Hello world" kernel
 -   [ ] You cannot use an existing linker in order to link your kernel. As written above, your kernel will not boot. So, you must create a linker for your kernel. Be careful, you CAN use the ’ld’ binary available on your host, but you CANNOT use the .ld file of your host.
 -   [ ] The i386 (x86) architecture is mandatory (you can thank me later).
 -   [ ] Install GRUB on a virtual image (???)
 -   [ ] Write an ASM boot code that handles multiboot header, and use GRUB to init and call main function of the kernel itself.
--   [🚧] Write basic kernel code of the choosen language.
+-   [ ] Write basic kernel code of the choosen language.
 -   [ ] Compile it with correct flags, and link it to make it bootable.
 -   [ ] Once all of those steps above are done, you can write some helpers like kernel types or basic functions (strlen, strcmp, ...)
 -   [ ] Your work must not exceed 10 MB.
--   [🚧] Code the interface between your kernel and the screen.
+-   [ ] Code the interface between your kernel and the screen.
 -   [x] Display "42" on the screen.
 -   [ ] For the link part, you must create a linker file with the GNU linker (ld).
 -   [ ] Your Makefile must compile all your source files with the right flags and the right compiler.
 -   [ ] After compilation, all the objects must be linked together in order to create the final Kernel binary.
 -   [ ] Add scroll and cursor support to your I/O interface.
--   [🚧] Add colors support to your I/O interface.
+-   [ ] Add colors support to your I/O interface.
 -   [x] Add helpers like printf / printk in order to print information / debug easily.
--   [🚧] Handle keyboard entries and print them.
+-   [ ] Handle keyboard entries and print them.
 -   [ ] Handle different screens, and keyboard shortcuts to switch easily between then.
 
 ### resources
