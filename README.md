@@ -27,6 +27,7 @@
 -   [ ] nice help menu with `Code page 437` border characters
 -   [ ] VGA history and scroll
 -   [ ] use KVM on top of QEMU?
+-   [ ] specify exact nightly version
 
 ### subject
 
