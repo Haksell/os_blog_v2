@@ -57,6 +57,7 @@
 ### resources
 
 -   https://os.phil-opp.com/
+-   https://os.phil-opp.com/edition-1/
 -   https://osdev.org/Main_Page
 -   http://www.brokenthorn.com/Resources/OSDevIndex.html
 -   https://github.com/rust-osdev
